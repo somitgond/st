@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Meslo LG S DZ:style=Regular:size=10:antialias=true:autohint=true";
+static char *font = "Meslo LG M DZ:style=Regular:size=10:antialias=true:autohint=true";
 static int borderpx = 4;
 
 /*
