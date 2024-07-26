@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Meslo LG M DZ:style=Regular:size=10:antialias=true:autohint=true";
+static char *font = "Meslo LG M DZ:style=Regular:size=12:antialias=true:autohint=true";
 static int borderpx = 4;
 
 /*
@@ -18,6 +18,7 @@ static int borderpx = 4;
  */
 static char *shell = "/bin/bash";
 char *utmp = NULL;
+
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
@@ -60,7 +61,7 @@ static double maxlatency = 33;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+static unsigned int blinktimeout = 0;
 
 /*
  * thickness of underline and bar cursors
@@ -91,7 +92,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.8;
@@ -118,6 +119,7 @@ static const char *colorname[] = {
   [13] = "#e1acbb", /* magenta */
   [14] = "#a7c7a2", /* cyan    */
   [15] = "#e2d3ba", /* white   */
+
 };
 
 
@@ -178,8 +180,8 @@ static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	//{ ShiftMask,            Button4, kscrollup,      {.i = 1} },
 	//{ ShiftMask,            Button5, kscrolldown,    {.i = 1} },
-	{XK_NO_MOD,            Button4,     kscrollup,      {.i = 3} },
-	{XK_NO_MOD,            Button5,   kscrolldown,    {.i = 3} },
+	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 3} },
+	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 3} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
@@ -205,12 +207,12 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = 3} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = 3} },
 
-	{ MODKEY|ShiftMask,              XK_K,       zoom,           {.f = +1} },
-	{ MODKEY|ShiftMask,              XK_J,        zoom,           {.f = -1} },
+	{ MODKEY|ShiftMask,     XK_K,           zoom,           {.f = +1} },
+	{ MODKEY|ShiftMask,     XK_J,           zoom,           {.f = -1} },
 
 	{ MODKEY,              XK_c,           clipcopy,       {.i =  0} },
 	{ MODKEY,              XK_v,           clippaste,      {.i =  0} },
-	{ ShiftMask ,              XK_Insert,           selpaste,       {.i =  0} },
+	{ ShiftMask ,          XK_Insert,      selpaste,       {.i =  0} },
 };
 
 /*
