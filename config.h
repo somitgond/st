@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Meslo LG M DZ:style=Regular:size=12:antialias=true:autohint=true";
+static char *font = "Meslo LG S DZ:style=Regular:size=14:antialias=true:autohint=true";
 static int borderpx = 4;
 
 /*
@@ -16,7 +16,7 @@ static int borderpx = 4;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/bash";
+static char *shell = "/usr/bin/dash";
 char *utmp = NULL;
 
 /* scroll program: to enable use a string like "scroll" */
@@ -139,7 +139,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
