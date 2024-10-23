@@ -7,8 +7,8 @@ VERSION = 0.9
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 
-X11INC = /usr/X11R6/include
-X11LIB = /usr/X11R6/lib
+X11INC = /usr/local/include
+X11LIB = /usr/local/lib
 
 PKG_CONFIG = pkg-config
 
@@ -21,9 +21,9 @@ LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\
        `$(PKG_CONFIG) --libs freetype2`
 
 # flags
-CFLAGS = -O3 -march=native -mtune=native
+#CFLAGS = -mtune=native
 STCPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600 
-STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
+STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) 
 STLDFLAGS = $(LIBS) $(LDFLAGS)
 
 # OpenBSD:
