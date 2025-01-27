@@ -7,7 +7,8 @@
  */
 //static char *font = "Meslo LG S DZ:style=Regular:pixelsize=21:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
 //static char *font = "Hack:style=Regular:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
-static char *font = "IBM Plex Mono:style=Medium:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
+static char *font = "Iosevka:style=Regular:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
+//static char *font = "IBM Plex Mono:style=Medium:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
 static int borderpx = 4;
 
 /*
@@ -77,7 +78,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "xterm-256color";
 
 /*
  * spaces per tab
