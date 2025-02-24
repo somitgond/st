@@ -7,7 +7,8 @@
  */
 //static char *font = "Meslo LG S DZ:style=Regular:pixelsize=21:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
 //static char *font = "Hack:style=Regular:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
-static char *font = "Iosevka:style=Regular:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
+//static char *font = "Iosevka:style=Regular:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
+static char *font = "JetBrains Mono:style=Medium:pixelsize=18:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
 //static char *font = "IBM Plex Mono:style=Medium:pixelsize=20:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
 static int borderpx = 4;
 
@@ -101,6 +102,7 @@ unsigned int tabspaces = 4;
 float alpha = 1.0;
 
 /* Terminal colors (16 first used in escape sequence) */
+// gruvbox
 static const char *colorname[] = {
 	/* 8 normal colors */
   /* 8 normal colors */
@@ -122,9 +124,7 @@ static const char *colorname[] = {
   [13] = "#e1acbb", /* magenta */
   [14] = "#a7c7a2", /* cyan    */
   [15] = "#e2d3ba", /* white   */
-
 };
-
 
 /*
  * Default colors (colorname index)
