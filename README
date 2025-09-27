@@ -9,6 +9,7 @@ Patches applied
 - st-scrollback-ringbuffer
 - st-scrollback-mouse
 - st-alpha
+- anysize 
 - gruvbox
 
 Requirements
