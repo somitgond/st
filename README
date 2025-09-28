@@ -8,8 +8,8 @@ Patches applied
 ---------------
 - st-scrollback-ringbuffer
 - st-scrollback-mouse
+- st-gruvbox-material
 - st-alpha
-- anysize 
 - gruvbox
 
 Requirements
